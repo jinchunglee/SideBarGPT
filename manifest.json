@@ -10,7 +10,9 @@
     },
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "logo.png"
+      "default_icon": "logo.png",
+      "default_width": 500,
+      "default_height": 500
     },
     "content_scripts": [
       {
