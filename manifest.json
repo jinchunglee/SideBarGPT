@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "AI Web Assistant",
+    "version": "1.0",
+    "description": "Extracts webpage text and lets you ask AI questions.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
